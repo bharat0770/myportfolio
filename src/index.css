@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body{
+    background-color : #fcfcfc;
+    color : #555555
+}
+
+.show {
+  opacity: 0 !important;
+  transform: translateX(100px) !important;
+}
+
+.dark-mode {
+    background-color: rgb(12, 12, 23);
+    color: white;
+}
