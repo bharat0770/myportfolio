@@ -8,10 +8,10 @@ import { HiPhone } from "react-icons/hi";
 
 const contactIcons = [
     { link: "https://github.com/bharat0770", icon: <AiOutlineGithub /> },
-    { link: "https://www.linkedin.com/in/bharat-suthar-89ba47373/", icon: <AiFillLinkedin /> },
-    { link: "mailto:bharatsuthar9324@gmail.com", icon: <AiFillMail /> },
-    { link: "AiFillFile", icon: <AiFillFile /> },
-    { link: "HiPhone", icon: <HiPhone /> },
+    { link: "https://www.linkedin.com/in/bharat-suthar0770", icon: <AiFillLinkedin /> },
+    { link: "https://mailto:bharats0770@gmail.com", icon: <AiFillMail /> },
+    { link: "https://drive.google.com/file/d/1dE4gM5Jja5B2SvGjyMk-dGi6fxZlX6cD/view?usp=sharing", icon: <AiFillFile /> },
+    // { link: "HiPhone", icon: <HiPhone /> },
 ]
 const animatedTextArr = [
     'Tech Savvy',
@@ -39,7 +39,7 @@ function IntroCard() {
 
             <div className="flex gap-5 justify-center w-full px-10">
                 {contactIcons.map((i, idx) => {
-                    return <a key={idx} target='_blank' className='relative  text-blue-900 hover:scale-125 transition-all duration-200 group text-2xl lg:text-4xl' href={i.link}> {i.icon}
+                    return <a key={idx} href={i.link} target='_blank' className='relative  text-blue-900 hover:scale-125 transition-all duration-200 group text-2xl lg:text-4xl'> {i.icon}
                         <div className='absolute left-0 -bottom-1 h-1 z-10 bg-blue-800  w-0 transition-all duration-150 ease-out group-hover:w-full'></div>
                     </a>
                 })}

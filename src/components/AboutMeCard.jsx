@@ -1,6 +1,6 @@
     import React from 'react'
     import { LuMousePointer2 } from "react-icons/lu";
-    import myProfile from "../assets/myProfile.png"; 
+    import myProfile from "../assets/myProfile3.jpeg"; 
 
     const hobbiesArr = [
         "reading books on varied topics", 
@@ -14,8 +14,8 @@
                 <h1 className='text-center text-3xl lg:text-4xl text-gray-600'>About <span className='text-blue-500'>Me</span></h1>
             <div className='w-full flex flex-col lg:flex-row gap-8 justify-center items-center' id='about'>
 
-                <div className="image w-full lg:w-[40%]   flex justify-center items-center" >
-                    <img src={myProfile} alt="my profile" className='object-cover object-center size-full rounded-full shadow-lg'/>
+                <div className="image w-full lg:w-[40%]    flex justify-center items-center" >
+                    <img src={myProfile} alt="my profile" className='object-cover object-center lg:max-h-100 lg:max-w-100 max-h-50 max-w-50 inset-0 rounded-full shadow-lg'/>
                 </div>
                 <div className='w-full lg:w-[60%] flex flex-col  gap-5 break-words'>
                     <p>

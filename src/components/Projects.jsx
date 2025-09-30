@@ -1,5 +1,4 @@
 import React from 'react'
-import image1 from "../assets/myProfile.png"
 import { GrMysql } from "react-icons/gr";
 import { SiMongodb, SiThreedotjs } from "react-icons/si";
 import { FaCss3, FaCss3Alt, FaJs } from "react-icons/fa";
@@ -13,10 +12,9 @@ import { IoLogoCss3 } from "react-icons/io";
 import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiChakraui } from "react-icons/si";
+// import image1 from "../assets/event.png"
 
-
-
-
+const image1 = null;
 const GsapIcon = (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" className='size-20'
         fill={"currentColor"} viewBox="0 0 24 24" {...props} >
@@ -41,9 +39,9 @@ const GsapIcon = (props) => (
 // <SiMongodb size={10} />
 const projectList = [
     {
-        image: image1,
-        info: "i made it i made iti made it i made iti made it v v i made it v  v i made itvi made iti made iti made it",
-        title: "chat application",
+        image: "/chat.png",
+        info: "A real-time chat application with authentication, state management, and a responsive UI. Built for seamless messaging across devices.",
+        title: "Chat Application",
         techStack: [
             <RiNextjsFill />,
             <SiChakraui />,
@@ -56,9 +54,9 @@ const projectList = [
         sourceLink: "gitLInk",
     },
     {
-        image: image1,
-        info: "i made it i made iti made it i made iti made it v v i made it v  v i made itvi made iti made iti made it",
-        title: "event management system",
+        image: "/event.png",
+        info: "A full-stack event management system where users can create, manage, and register for events. Integrated with a database for smooth event handling.",
+        title: "Event Management System",
         techStack: [
             <RiNextjsFill />,
             <RiTailwindCssFill />,
@@ -70,19 +68,21 @@ const projectList = [
         sourceLink: "gitLInk",
     },
     {
-        image: image1,
-        info: "i made it i made iti made it i made iti made it v v i made it v  v i made itvi made iti made iti made it",
-        title: "zentry clone",
+        image: "zentry.png",
+        info: "A clone of the Zentry website built with animations and smooth transitions to showcase modern frontend development techniques.",
+        title: "Zentry Clone",
         techStack: [
             <RiReactjsFill />,
             <GsapIcon />,
             <RiTailwindCssFill />,
-        ], viewLink: "https://zentry-clone25.vercel.app/",
+        ],
+        viewLink: "https://zentry-clone25.vercel.app/",
         sourceLink: "gitLInk",
-    }, {
+    },
+    {
         image: image1,
-        info: "i made it i made iti made it i made iti made it v v i made it v  v i made itvi made iti made iti made it",
-        title: "threeJs model rendering",
+        info: "A Three.js powered project that renders and displays 3D models in the browser, enabling interactive visualization.",
+        title: "ThreeJs Model Rendering",
         techStack: [
             <FaReact />,
             <RiTailwindCssFill />, 
@@ -93,11 +93,11 @@ const projectList = [
     },
     {
         image: image1,
-        info: "i made it i made iti made it i made iti made it v v i made it v  v i made itvi made iti made iti made it",
+        info: "A 3D rotating sphere built using Three.js, HTML, CSS, and JavaScript to demonstrate WebGL and 3D rendering capabilities.",
         title: "3D Sphere",
         techStack: [
             <FaHtml5 />,
-            <FaCss3Alt/>,
+            <FaCss3Alt />,
             <FaJs />,
             <SiThreedotjs />,
         ],
@@ -106,11 +106,11 @@ const projectList = [
     },
     {
         image: image1,
-        info: "i made it i made iti made it i made iti made it v v i made it v  v i made itvi made iti made iti made it",
+        info: "An infinite tunnel animation created using Three.js, delivering a visually immersive 3D effect directly in the browser.",
         title: "Infinite Tunnel",
         techStack: [
             <FaHtml5 />,
-            <FaCss3Alt/>,
+            <FaCss3Alt />,
             <FaJs />,
             <SiThreedotjs />,
         ],
@@ -119,18 +119,18 @@ const projectList = [
     },
     {
         image: image1,
-        info: "i made it i made iti made it i made iti made it v v i made it v  v i made itvi made iti made iti made it",
-        title: "Earth model",
-       techStack: [
-           <FaHtml5 />,
-           <FaCss3Alt/>,
+        info: "A 3D Earth globe model with rotation and interactive effects using Three.js to simulate planet visualization in real-time.",
+        title: "Earth Model",
+        techStack: [
+            <FaHtml5 />,
+            <FaCss3Alt />,
             <FaJs />,
             <SiThreedotjs />,
         ],
         viewLink: "https://earth-globe-model-3js.netlify.app/",
         sourceLink: "gitLInk",
     },
-]
+];
 
 
 
@@ -147,11 +147,16 @@ function Projects() {
                         {/* <div className="w-full lg:w-[50%]">
                             <img src={i.image} alt="" className=' size-full object-center object-cover rounded-lg ' />
                         </div> */}
-                        <div className="w-full lg:w-[50%]">
+                        <div className="w-full lg:w-[60%]">
                             {/* <img src={i.image} alt="" className=' size-full object-center object-cover rounded-lg ' /> */}
-                            <iframe src={i.viewLink}  className=' size-full object-center object-cover rounded-lg '   ></iframe>
+                            {
+                                !i.image ? 
+                                <iframe src={i.viewLink}  className=' size-full object-center object-cover rounded-lg '   ></iframe>
+                                :
+                                <img src={i.image} alt="project image" className='object-center object-fill size-full' />
+                            }
                         </div>
-                        <div className='w-full lg:w-[50%]'>
+                        <div className='w-full lg:w-[40%]'>
                             <div className='h-auto lg:h-[60%]'>
                                 <h1 className='text-center text-xl lg:text-4xl my-2 text-blue-900' >{i.title || "hello app"} </h1>
                                 <p className='text-md lg:text-xl p-1'>

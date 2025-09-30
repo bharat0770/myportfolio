@@ -8,11 +8,11 @@ import { AiFillFile } from "react-icons/ai";
 import { HiPhone } from "react-icons/hi";
 
 const contactIcons = [
-  { link: "AiOutlineGithub", icon: <AiOutlineGithub /> },
-  { link: "AiFillLinkedin", icon: <AiFillLinkedin /> },
-  { link: "AiFillMail", icon: <AiFillMail /> },
-  { link: "AiFillFile", icon: <AiFillFile /> },
-  { link: "HiPhone", icon: <HiPhone /> },
+    { link: "https://github.com/bharat0770", icon: <AiOutlineGithub /> },
+    { link: "https://www.linkedin.com/in/bharat-suthar0770", icon: <AiFillLinkedin /> },
+    { link: "https://mailto:bharats0770@gmail.com", icon: <AiFillMail /> },
+    { link: "https://drive.google.com/file/d/1dE4gM5Jja5B2SvGjyMk-dGi6fxZlX6cD/view?usp=sharing", icon: <AiFillFile /> },
+    // { link: "HiPhone", icon: <HiPhone /> },
 ]
 function Footer() {
   return (
