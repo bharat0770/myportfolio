@@ -32,14 +32,16 @@ const skills = [
 ]
 function SkillsCard() {
     return (
-        <div  className='w-full p-1 lg:p-8 flex flex-col items-center justify-center'> 
+        <div  className='w-full p-1 lg:p-8 flex gap-10 flex-col items-center justify-center' id='skills'> 
+                    <h1 className='text-center text-3xl lg:text-4xl text-gray-600'>My <span className='text-blue-500'>Skills</span></h1>
+
         {/* <h1 className='flex items-center text-4xl text-blue-800 mb-10'>Skills</h1> */}
         {/* <div className='lg:grid lg:grid-cols-6 gap-1 lg:h-[20rem] w-full flex flex-wrap  justify-center'> */}
             <div className='grid lg:grid-cols-6 grid-cols-3 gap-1 lg:h-[20rem] '>
             {  
 
-                skills.map((i, icx) => (
-                    <div className=' rounded-lg flex flex-col  p-2 hover:bg-blue-50'>
+                skills.map((i, idx) => (
+                    <div className=' rounded-lg flex flex-col  p-2 hover:bg-blue-50'key={idx}>
                         <div className='h-[90%] text-blue-900 flex justify-center items-center m-4 text-5xl lg:text-7xl '>
                             {i.icon}
                         </div>

@@ -12,19 +12,19 @@ function Navbar() {
             home
             <div className='absolute left-0 -bottom-1 h-1 z-10 bg-blue-800  w-0 transition-all duration-150 ease-out group-hover:w-full'></div>
           </a>
-          <a href="#home" className='relative hover:text-blue-800 group'>
+          <a href="#about" className='relative hover:text-blue-800 group'>
             about
             <div className='absolute left-0 -bottom-1 h-1 z-10 bg-blue-800  w-0 transition-all duration-150 ease-out group-hover:w-full'></div>
           </a>
-          <a href="#home" className='relative hover:text-blue-800 group'>
+          <a href="#skills" className='relative hover:text-blue-800 group'>
             skills
             <div className='absolute left-0 -bottom-1 h-1 z-10 bg-blue-800  w-0 transition-all duration-150 ease-out group-hover:w-full'></div>
           </a>
-          <a href="#home" className='relative hover:text-blue-800 group'>
+          <a href="#projects" className='relative hover:text-blue-800 group'>
             projects
             <div className='absolute left-0 -bottom-1 h-1 z-10 bg-blue-800  w-0 transition-all duration-150 ease-out group-hover:w-full'></div>
           </a>
-          <a href="#home" className='relative hover:text-blue-800 group'>
+          <a href="#footer" className='relative hover:text-blue-800 group'>
             contact
             <div className='absolute left-0 -bottom-1 h-1 z-10 bg-blue-800  w-0 transition-all duration-150 ease-out group-hover:w-full'></div>
           </a>  <a href="#home" className='relative hover:text-blue-800 group'>
