@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className='min-h-screen w-full overflow-hidden  flex flex-col items-center lg:gap-40 md:px-10 xl:px-80 px-5 gap-10'>
+      <div className='min-h-screen w-full overflow-hidden flex flex-col items-center lg:gap-40 md:px-10 2xl:px-80 px-5 gap-10'>
 
         {/* navbar */}  
         <Navbar />

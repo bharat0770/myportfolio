@@ -2,7 +2,7 @@ import React from 'react'
 import { FaMoon } from "react-icons/fa";
 function Navbar() {
   return (
-    <div className=' w-full py-10 text-xl overflow-hidden'>
+    <div className=' w-full py-10 text-sm lg:text-xl overflow-hidden'>
       <div className='flex justify-between items-center'>
         <div className="text-blue-500">
           Bs.

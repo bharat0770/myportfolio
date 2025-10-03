@@ -138,12 +138,12 @@ const projectList = [
 function Projects() {
     return (
         //  <div className='w-full grid grid-cols-2 gap-5 justify-center items-center  px-4'> 
-        <div className='w-full flex flex-col gap-5 lg:gap-20 justify-center items-center  lg:px-10' id='projects'>
+        <div className='w-full flex flex-col gap-5 lg:gap-20 justify-center items-center ' id='projects'>
             <h1 className='text-center text-3xl lg:text-4xl text-gray-600'>My <span className='text-blue-500'>Projects</span></h1>
 
             {
                 projectList.map((i, idx) => (
-                    <div key={idx} className="w-full flex flex-col lg:flex-row h-auto lg:h-[30rem]  rounded-lg shadow-lg gap-5 overflow-hidden">
+                    <div key={idx} className="w-full flex flex-col lg:flex-row h-auto lg:h-[30rem]  rounded-lg shadow-lg  overflow-hidden">
                         {/* <div className="w-full lg:w-[50%]">
                             <img src={i.image} alt="" className=' size-full object-center object-cover rounded-lg ' />
                         </div> */}
@@ -163,7 +163,7 @@ function Projects() {
                                     {i.info}
                                 </p>
                             </div>
-                            <div className='h-[20%] lg:flex gap-5 justify-evenly items-center text-2xl lg:text-5xl grid grid-cols-6 px-5  py-2'>
+                            <div className='h-[20%] lg:flex gap-5 justify-evenly items-center text-2xl lg:text-5xl grid grid-cols-6 lg:px-5  py-2'>
                                 {i.techStack.map((i, idx) => (<div key={idx}>{i}</div>))}
                             </div>
                             <div className='py-2 lg:h-[20%] flex justify-evenly items-center'>
@@ -191,6 +191,7 @@ function Projects() {
         </div>
     )
 }
+
 
 export default Projects
 
