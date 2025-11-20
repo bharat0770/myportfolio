@@ -85,7 +85,7 @@ const projectList = [
         title: "ThreeJs Model Rendering",
         techStack: [
             <FaReact />,
-            <RiTailwindCssFill />, 
+            <RiTailwindCssFill />,
             <SiThreedotjs />,
         ],
         viewLink: "https://3d-model-three-js.vercel.app/",
@@ -143,27 +143,27 @@ function Projects() {
 
             {
                 projectList.map((i, idx) => (
-                    <div key={idx} className="w-full flex flex-col lg:flex-row h-auto lg:h-[30rem]  rounded-lg shadow-lg  overflow-hidden">
+                    <div key={idx} className="w-full flex flex-col lg:flex-row h-auto lg:h-[20rem] xl:h-[30rem]  rounded-lg shadow-lg  overflow-hidden">
                         {/* <div className="w-full lg:w-[50%]">
                             <img src={i.image} alt="" className=' size-full object-center object-cover rounded-lg ' />
                         </div> */}
                         <div className="w-full lg:w-[60%]">
                             {/* <img src={i.image} alt="" className=' size-full object-center object-cover rounded-lg ' /> */}
                             {
-                                !i.image ? 
-                                <iframe src={i.viewLink}  className=' size-full object-center object-cover rounded-lg '   ></iframe>
-                                :
-                                <img src={i.image} alt="project image" className='object-center object-fill size-full' />
+                                !i.image ?
+                                    <iframe src={i.viewLink} className=' size-full object-center object-cover rounded-lg '   ></iframe>
+                                    :
+                                    <img src={i.image} alt="project image" className='object-center object-fill size-full' />
                             }
                         </div>
-                        <div className='w-full lg:w-[40%]'>
-                            <div className='h-auto lg:h-[60%]'>
-                                <h1 className='text-center text-xl lg:text-4xl my-2 text-blue-900' >{i.title || "hello app"} </h1>
-                                <p className='text-md lg:text-xl p-1'>
+                        <div className='w-full lg:w-[40%] px-8'>
+                            <div className='h-auto xl:h-[60%]'>
+                                <h1 className='text-center text-xl xl:text-4xl my-2 text-blue-900' >{i.title || "hello app"} </h1>
+                                <p className='text-md xl:text-xl p-1'>
                                     {i.info}
                                 </p>
                             </div>
-                            <div className='h-[20%] lg:flex gap-5 justify-evenly items-center text-2xl lg:text-5xl grid grid-cols-6 lg:px-5  py-2'>
+                            <div className='h-[20%] lg:flex gap-5 justify-evenly items-center text-2xl lg:text-4xl  xl:text-5xl grid grid-cols-6 lg:px-5  py-2'>
                                 {i.techStack.map((i, idx) => (<div key={idx}>{i}</div>))}
                             </div>
                             <div className='py-2 lg:h-[20%] flex justify-evenly items-center'>
@@ -180,6 +180,7 @@ function Projects() {
                                         <span className="relative z-10 group-hover:text-white">Source Code</span>
                                         <span className="absolute left-0 top-0 w-0 h-full bg-blue-900 transition-all duration-200 ease-out group-hover:w-full  opacity-100 "></span>
                                     </a>
+
 
                                 }
 
