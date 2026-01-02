@@ -37,6 +37,9 @@ const GsapIcon = (props) => (
     <RiNextjsFill size={10} />,
     <SiChakraui size={10} />, */}
 // <SiMongodb size={10} />
+// https://github.com/bharat0770/aichatapp_frontend
+
+
 const projectList = [
     {
         image: "/chat.png",
@@ -51,7 +54,7 @@ const projectList = [
             <SiMongodb />
         ],
         viewLink: "https://chat-front-end24.vercel.app/login",
-        sourceLink: "gitLInk",
+        sourceLink: "https://github.com/bharat0770/chatFrontEnd24",
     },
     {
         image: "/event.png",
@@ -65,7 +68,7 @@ const projectList = [
             <SiMongodb />
         ],
         viewLink: "https://event-management-frontend-25.vercel.app/",
-        sourceLink: "gitLInk",
+        sourceLink: "https://github.com/bharat0770/eventManagementFrontend_25",
     },
     {
         image: "zentry.png",
@@ -77,7 +80,7 @@ const projectList = [
             <RiTailwindCssFill />,
         ],
         viewLink: "https://zentry-clone25.vercel.app/",
-        sourceLink: "gitLInk",
+        sourceLink: "https://github.com/bharat0770/zentryClone25",
     },
     {
         image: image1,
@@ -102,7 +105,7 @@ const projectList = [
             <SiThreedotjs />,
         ],
         viewLink: "https://3d-rotating-sphere-3js.netlify.app/",
-        sourceLink: "gitLInk",
+        sourceLink: null,
     },
     {
         image: image1,
@@ -115,7 +118,7 @@ const projectList = [
             <SiThreedotjs />,
         ],
         viewLink: "https://infinite-tunnel-3js.netlify.app/",
-        sourceLink: "gitLInk",
+        sourceLink: null,
     },
     {
         image: image1,
@@ -128,7 +131,7 @@ const projectList = [
             <SiThreedotjs />,
         ],
         viewLink: "https://earth-globe-model-3js.netlify.app/",
-        sourceLink: "gitLInk",
+        sourceLink: null,
     },
 ];
 
@@ -176,12 +179,10 @@ function Projects() {
                                 }
                                 {
                                     i.sourceLink &&
-                                    <a href={i.viewLink} target="_blank" className="relative group overflow-hidden text-md lg:text-xl px-1 py-1 lg:px-9 lg:py-3 text-blue-800 border-2 border-blue-900 bg-white rounded-lg">
+                                    <a href={i.sourceLink} target="_blank" className="relative group overflow-hidden text-md lg:text-xl px-1 py-1 lg:px-9 lg:py-3 text-blue-800 border-2 border-blue-900 bg-white rounded-lg">
                                         <span className="relative z-10 group-hover:text-white">Source Code</span>
                                         <span className="absolute left-0 top-0 w-0 h-full bg-blue-900 transition-all duration-200 ease-out group-hover:w-full  opacity-100 "></span>
                                     </a>
-
-
                                 }
 
                             </div>
