@@ -1,13 +1,13 @@
 import React from 'react'
 import GitHubCalendar from 'react-github-calendar';
-const theme = {
-  light: ['#cce0ff', '#6699ff', '#3366ff', '#0033cc', '#001a66'],
-  dark:  ['#cccccc', '#3366ff', '#0044cc', '#002080', '#000d33'],
-};
 // const theme = {
 //   light: ['#cce0ff', '#6699ff', '#3366ff', '#0033cc', '#001a66'],
-//   dark:  ['#99bbff', '#3366ff', '#0044cc', '#002080', '#000d33'],
+//   dark:  ['#cccccc', '#3366ff', '#0044cc', '#002080', '#000d33'],
 // };
+const theme = {
+  light: ['#cce0ff', '#6699ff', '#3366ff', '#0033cc', '#001a66'],
+  dark:  ['#99bbff', '#3366ff', '#0044cc', '#002080', '#000d33'],
+};
 
 
 function CodeDays() {

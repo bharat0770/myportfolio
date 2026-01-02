@@ -37,11 +37,12 @@ const GsapIcon = (props) => (
     <RiNextjsFill size={10} />,
     <SiChakraui size={10} />, */}
 // <SiMongodb size={10} />
-// https://github.com/bharat0770/aichatapp_frontend
+
 
 
 const projectList = [
-    {
+  
+       {
         image: "/chat.png",
         info: "A real-time chat application with authentication, state management, and a responsive UI. Built for seamless messaging across devices.",
         title: "Chat Application",
@@ -69,6 +70,20 @@ const projectList = [
         ],
         viewLink: "https://event-management-frontend-25.vercel.app/",
         sourceLink: "https://github.com/bharat0770/eventManagementFrontend_25",
+    },
+      {
+        image: "/aichat.png",
+        info: "A real-time chat application with authentication, state management, which uses huggingface API to simulate AI chats.",
+        title: "AI Chat Application",
+        techStack: [
+            <FaReact/>,
+            <FaNodeJs />,
+            <SiExpress />,
+            <SiMongodb />
+            
+        ],
+        viewLink: "https://aichatapp-frontend-lilac.vercel.app/",
+        sourceLink: "https://github.com/bharat0770/aichatapp_frontend",
     },
     {
         image: "zentry.png",
