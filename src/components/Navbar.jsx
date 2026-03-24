@@ -8,7 +8,7 @@ function Navbar() {
         <div className="text-blue-500">
           Bs.
         </div>
-        <div className='relative hidden md:flex gap-1 lg:gap-5 flex-wrap capitalize '>
+        <div className='relative hidden md:flex gap-1 lg:gap-6 flex-wrap capitalize '>
           <a href="#home" className='relative hover:text-blue-800 group'>
             home
             <div className='absolute left-0 -bottom-1 h-1 z-10 bg-blue-800  w-0 transition-all duration-150 ease-out group-hover:w-full'></div>
