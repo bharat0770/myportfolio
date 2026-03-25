@@ -19,7 +19,7 @@ let TimeLine = [
     },
     {
         time: "july 2025",
-        content: "started working under an experienced developer on a client project"
+        content: "started working as a freelance developer as a team of 3 developers on a client project"
     }
 ].reverse();
 function TimeLineCard() {

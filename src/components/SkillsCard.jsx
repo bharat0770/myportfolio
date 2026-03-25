@@ -26,9 +26,9 @@ const skills = [
 {name : "BrandThreejs", icon : <TbBrandThreejs />},
 {name : "Html5", icon : <FaHtml5 />},
 {name : "Css3", icon : <IoLogoCss3 />},
-{name : "NextjsFill", icon : <RiNextjsFill />},
-{name : "TailwindCssFill", icon : <RiTailwindCssFill />},
-{name : "Chakraui", icon : <SiChakraui />}
+{name : "Nextjs", icon : <RiNextjsFill />},
+{name : "TailwindCss", icon : <RiTailwindCssFill />},
+{name : "ChakraUi", icon : <SiChakraui />}
 ]
 function SkillsCard() {
     return (
