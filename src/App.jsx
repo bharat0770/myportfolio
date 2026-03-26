@@ -8,6 +8,7 @@ import SkillsCard from './components/SkillsCard'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import CodeDays from './components/CodeDays'
+import { TiltEffect } from './components/HoverMe'
 
 
 function App() {
@@ -27,7 +28,6 @@ function App() {
         {/* skills*/}        
         <SkillsCard />
         {/* days i code  */}
-
         <CodeDays />
         {/* projects */}
         <Projects />
