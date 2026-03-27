@@ -23,7 +23,7 @@ const skills = [
 {name : "Redux", icon : <SiRedux />},
 {name : "Express", icon : <SiExpress  />},
 {name : "NodeJs", icon : <FaNodeJs  />},
-{name : "BrandThreejs", icon : <TbBrandThreejs />},
+{name : "Threejs", icon : <TbBrandThreejs />},
 {name : "Html5", icon : <FaHtml5 />},
 {name : "Css3", icon : <IoLogoCss3 />},
 {name : "Nextjs", icon : <RiNextjsFill />},
