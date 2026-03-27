@@ -12,6 +12,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { RiNextjsFill, RiReactjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiChakraui } from "react-icons/si";
+import { TiltEffect } from './HoverMe';
 // import image1 from "../assets/event.png"
 
 const image1 = null;

@@ -1,5 +1,4 @@
 import { useState, MouseEvent, useCallback } from "react";
-    import myProfile from "../assets/myProfile3.jpeg"; 
 
 // Throttle function to limit call rate
 function throttle(func, delay) {
@@ -12,10 +11,10 @@ function throttle(func, delay) {
   };
 }
 
-export const TiltEffect = () => {
+export const TiltEffect = ({image}) => {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
-  
+
   const onMouseMove = useCallback(
     throttle((e) => {
       const card = e.currentTarget;
@@ -43,6 +42,7 @@ export const TiltEffect = () => {
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
 
+
       style={{
         transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
 
@@ -50,7 +50,7 @@ export const TiltEffect = () => {
       }}
     >
       <div className="flex h-full w-full items-center justify-center rounded-lg">
-                            <img src={myProfile} alt="my profile" className='object-cover object-center lg:max-h-100 lg:max-w-100 max-h-50 max-w-50 inset-0 rounded-full shadow-lg'/>
+        <img src={image} alt="my profile" className='object-cover object-center lg:max-h-100 lg:max-w-100 max-h-50 max-w-50 inset-0 rounded-full shadow-lg' />
       </div>
     </div>
   );
