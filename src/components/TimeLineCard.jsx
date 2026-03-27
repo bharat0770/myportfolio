@@ -1,25 +1,24 @@
 import React, { useEffect } from 'react'
 let TimeLine = [
-
     {
-        time: "june 2021",
-        content: "started learning basics of webDev along with college curriculum"
+        time: "June 2021",
+        content: "Began learning web development fundamentals alongside college coursework."
     },
     {
-        time: "march 2022",
-        content: "completed hsc in commerce scored 89%"
+        time: "March 2022",
+        content: "Completed Higher Secondary Education (Commerce) with 89%."
     },
     {
-        time: "august 2022",
-        content: " enrolled in BCA (Bachelors in Computer Application)"
+        time: "August 2022",
+        content: "Enrolled in Bachelor of Computer Applications (BCA)."
     },
     {
-        time: "june 2025",
-        content: "completed BCA scored 9.034 cgpa"
+        time: "June 2025",
+        content: "Graduated with a BCA degree, achieving a CGPA of 9.03."
     },
     {
-        time: "july 2025",
-        content: "started working as a freelance developer as a team of 3 developers on a client project"
+        time: "July 2025",
+        content: "Working as a freelance full stack developer in a 3-member team, contributing to client projects with end-to-end feature development and delivery."
     }
 ].reverse();
 function TimeLineCard() {
