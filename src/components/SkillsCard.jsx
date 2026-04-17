@@ -29,7 +29,7 @@ const skills = [
 {name : "Nextjs", icon : <RiNextjsFill />},
 {name : "TailwindCss", icon : <RiTailwindCssFill />},
 {name : "ChakraUi", icon : <SiChakraui />},
-{name : "Type script", icon : <SiTypescript />}
+{name : "Typescript", icon : <SiTypescript />}
 ]
 function SkillsCard() {
     return (
