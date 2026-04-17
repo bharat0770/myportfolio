@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import { GrMysql } from "react-icons/gr";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiTypescript } from "react-icons/si";
 import { FaJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
@@ -28,7 +28,8 @@ const skills = [
 {name : "Css3", icon : <IoLogoCss3 />},
 {name : "Nextjs", icon : <RiNextjsFill />},
 {name : "TailwindCss", icon : <RiTailwindCssFill />},
-{name : "ChakraUi", icon : <SiChakraui />}
+{name : "ChakraUi", icon : <SiChakraui />},
+{name : "Typescript", icon : <SiTypescript />}
 ]
 function SkillsCard() {
     return (
