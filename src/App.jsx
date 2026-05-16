@@ -9,6 +9,7 @@ import Projects from './components/Projects'
 import Footer from './components/Footer'
 import CodeDays from './components/CodeDays'
 import { TiltEffect } from './components/HoverMe'
+import CertificateSlider from './components/CertificateSlider'
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         {/* projects */}
         <Projects />
         {/* get in touch */}
+        <CertificateSlider />
         <Footer />
   
       </div>
