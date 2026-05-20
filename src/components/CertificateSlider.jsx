@@ -6,7 +6,7 @@ import RoboitcsCertificate from "../assets/Robotics_Ai.jpeg";
 import BcaCertificate from "../assets/BCA_grad_degree.jpeg";
 import FirstRankCertificate from "../assets/BCA_1st_Rank.jpeg";
 import ClassRep from "../assets/BCA_Class_Rep.jpeg";
-
+import GenAi from "../assets/gen_ai.jpeg"
 import { TiltEffect } from './HoverMe';
 
 
@@ -16,6 +16,8 @@ const certificates = [
     { title: "Bachelors in Computer Application (BCA)", img: BcaCertificate },
     { title: "bca 1st Rank", img: FirstRankCertificate },
     { title: "class representative", img: ClassRep },
+        { title: "Generatvie ai", img: GenAi },
+    
 ]
 const CertificateSlider = () => {
     const [up, setUp] = useState(0);
